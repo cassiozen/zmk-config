@@ -1,7 +1,13 @@
-name: macropad
-keymap:
-  - group: main
-    layers:
-      - name: base
-        keymap:
-          - KC_A, KC_B, KC_C, KC_D, KC_E
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+
+/ {
+    keymap {
+        compatible = "zmk,keymap";
+        default_layer {
+            bindings = <
+              &kp Q    &kp W    &kp E     &kp R
+            >;
+        };
+    };
+};

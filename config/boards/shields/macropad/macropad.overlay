@@ -1,14 +1,6 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
-    keymap0: keymap {
-        compatible = "zmk,keymap";
-        num_keys = <5>;
-        keymap = <
-            &kp_a &kp_b &kp_c &kp_d &kp_e
-        >;
-    };
-
     kscan0: kscan {
         compatible = "zmk,kscan-gpio-direct";
         debounce_period = <5>;
