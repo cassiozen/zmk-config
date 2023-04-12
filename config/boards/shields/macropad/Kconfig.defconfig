@@ -1,0 +1,9 @@
+if BOARD_MACROPAD
+
+config ZMK_KEYBOARD_NAME
+    default "Macropad"
+
+config ZMK_ENCODER
+    default y
+
+endif
