@@ -1,0 +1,24 @@
+#include <dt-bindings/zmk/keys.h>
+
+/ {
+    keymap0: keymap {
+        compatible = "zmk,keymap";
+        num_keys = <5>;
+        keymap = <
+            &kp_a &kp_b &kp_c &kp_d &kp_e
+        >;
+    };
+
+    kscan0: kscan {
+        compatible = "zmk,kscan-gpio-direct";
+        debounce_period = <5>;
+        label = "KSCAN";
+        gpios = <
+            &pro_micro_d 2 GPIO_ACTIVE_HIGH
+            &pro_micro_d 3 GPIO_ACTIVE_HIGH
+            &pro_micro_d 4 GPIO_ACTIVE_HIGH
+            &pro_micro_d 5 GPIO_ACTIVE_HIGH
+            &pro_micro_d 6 GPIO_ACTIVE_HIGH
+        >;
+    };
+};

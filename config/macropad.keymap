@@ -1,0 +1,7 @@
+name: macropad
+keymap:
+  - group: main
+    layers:
+      - name: base
+        keymap:
+          - KC_A, KC_B, KC_C, KC_D, KC_E
