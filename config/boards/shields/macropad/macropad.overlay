@@ -25,7 +25,7 @@
 		label = "ENCODER";
 		a-gpios = <&pro_micro_d 8 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
 		b-gpios = <&pro_micro_d 9 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-		resolution = <2>;
+		resolution = <4>;
 		status = "okay";
 	};
 
