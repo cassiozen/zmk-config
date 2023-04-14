@@ -7,7 +7,7 @@
 
     default_layer {
         bindings = <
-          &kp A    &kp B    &kp E    &kp R    &kp T    &kp K_MUTE
+          &kp C_VOL_UP    &kp C_VOL_DN    &kp E    &kp R    &kp T    &kp K_MUTE
         >;
 
         sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
