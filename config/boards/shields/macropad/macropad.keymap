@@ -2,12 +2,21 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
+  behaviors {
+    td0: tap_dance_0 {
+        compatible = "zmk,behavior-tap-dance";
+        label = "TAP_DANCE_PWR";
+        #binding-cells = <0>;
+        tapping-term-ms = <200>;
+        bindings = <&none>, <&kp K_PWR>;
+    };
+  };
 	keymap0: keymap {
 		compatible = "zmk,keymap";
 
     default_layer {
         bindings = <
-          &kp C_VOL_UP    &kp C_VOL_DN    &kp E    &kp R    &kp T    &kp K_MUTE
+          &kp C_BRI_UP    &kp C_BRI_DN    &kp E    &kp R    &td0    &kp K_MUTE
         >;
 
         sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
