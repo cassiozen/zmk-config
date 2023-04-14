@@ -3,7 +3,4 @@ if SHIELD_MACROPAD
 config ZMK_KEYBOARD_NAME
     default "macropad"
 
-config ZMK_ENCODER
-   default y
-
 endif
