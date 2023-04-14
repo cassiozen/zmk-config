@@ -11,12 +11,24 @@
         bindings = <&kp E>, <&kp C_POWER>;
     };
   };
+  macros {
+    emoji: emoji {
+        label = "ZM_emoji";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        bindings
+            = <&macro_press &kp LGUI &kp LCTRL>
+            , <&macro_tap &kp SPACE>
+            , <&macro_release &kp LGUI &kp LCTRL>
+            ;
+    };
+  };
 	keymap0: keymap {
 		compatible = "zmk,keymap";
 
     default_layer {
         bindings = <
-          &kp C_BRI_UP    &kp C_BRI_DN    &kp E    &kp C_POWER    &td0    &kp K_MUTE
+          &kp C_BRI_INC    &kp C_BRI_DEC    &emoji    &kp K_PWR    &td0    &kp K_MUTE
         >;
 
         sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
