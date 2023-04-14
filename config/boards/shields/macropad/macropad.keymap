@@ -7,8 +7,10 @@
 
     default_layer {
         bindings = <
-          &kp Q    &kp W    &kp E     &kp R
+          &kp C_BRIGHTNESS_INC    &kp C_BRIGHTNESS_DEC    &kp E    &kp R    &kp T    &kp K_MUTE
         >;
+
+        sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
     };
-    };
+  };
 };
