@@ -2,6 +2,15 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
+  behaviors {
+      reset: tap_dance_reset {
+          compatible = "zmk,behavior-tap-dance";
+          label = "TAP_DANCE_RESET";
+          #binding-cells = <0>;
+          tapping-term-ms = <200>;
+          bindings = <&none>, <&bt BT_CLR>;
+      };
+  };
   macros {
     emoji: emoji {
         label = "ZM_emoji";
@@ -19,7 +28,7 @@
 
     default_layer {
         bindings = <
-          &kp F15    &kp F14    &kp C_PLAY_PAUSE    &emoji    &kp K_PWR    &kp K_MUTE
+          &kp F15    &kp F14    &reset    &emoji    &kp K_PWR    &kp K_MUTE
         >;
 
         sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
