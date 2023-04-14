@@ -8,7 +8,7 @@
         label = "TAP_DANCE_PWR";
         #binding-cells = <0>;
         tapping-term-ms = <200>;
-        bindings = <&none>, <&kp K_PWR>;
+        bindings = <&kp E>, <&kp C_POWER>;
     };
   };
 	keymap0: keymap {
@@ -16,7 +16,7 @@
 
     default_layer {
         bindings = <
-          &kp C_BRI_UP    &kp C_BRI_DN    &kp E    &kp R    &td0    &kp K_MUTE
+          &kp C_BRI_UP    &kp C_BRI_DN    &kp E    &kp C_POWER    &td0    &kp K_MUTE
         >;
 
         sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
