@@ -1,0 +1,6 @@
+if SHIELD_FATBEE
+
+config ZMK_KEYBOARD_NAME
+    default "FatBee"
+
+endif

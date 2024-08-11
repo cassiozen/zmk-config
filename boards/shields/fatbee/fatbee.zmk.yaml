@@ -1,0 +1,8 @@
+file_format: "1"
+id: fatbee
+name: Fatbee
+type: shield
+url: https://github.com/cassiozen/FatBee
+requires: [pro_micro]
+features:
+  - keys
